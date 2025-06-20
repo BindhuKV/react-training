@@ -1,0 +1,26 @@
+.app {
+  min-height: 100vh;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.app.light {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.app.dark {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.light .theme-toggle {
+  background-color: #007bff;
+  color: white;
+}
+
+.dark .theme-toggle {
+  background-color: #ffc107;
+  color: black;
+}
