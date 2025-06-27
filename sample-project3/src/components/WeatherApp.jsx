@@ -1,11 +1,11 @@
-import { useState, useEffect } from 'react';
-import { useDebounce } from '../hooks/useDebounce.jsx';
-import '../css/WeatherApp.css';
+import { useState, useEffect } from 'react'
+import { useDebounce } from '../hooks/useDebounce.jsx'
+import '../css/WeatherApp.css'
 
 const WeatherApp = () => {
-  const [searchTerm, setSearchTerm] = useState('');
-  const [weatherData, setWeatherData] = useState(null);
-  const debouncedSearchTerm = useDebounce(searchTerm, 500);
+  const [searchTerm, setSearchTerm] = useState('')
+  const [weatherData, setWeatherData] = useState(null)
+  const debouncedSearchTerm = useDebounce(searchTerm, 500)
 
   useEffect(() => {
     if (debouncedSearchTerm) {
@@ -15,7 +15,7 @@ const WeatherApp = () => {
         condition: 'Sunny'
       });
     }
-  }, [debouncedSearchTerm]);
+  }, [debouncedSearchTerm])
 
   return (
     <div className="weather-app">
@@ -34,7 +34,7 @@ const WeatherApp = () => {
         </div>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default WeatherApp;
+export default WeatherApp

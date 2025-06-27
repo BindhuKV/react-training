@@ -3,6 +3,8 @@
   margin: 2rem auto;
   padding: 1rem;
   text-align: center;
+  background-color: lightblue;
+  border-radius: 8px;
 }
 
 .weather-app h1 {

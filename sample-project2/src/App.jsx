@@ -4,7 +4,7 @@ import ThemeToggle from './components/ThemeToggle'
 import './css/App.css'
 
 const AppContent = () => {
-  const { theme } = useTheme();
+  const { theme } = useTheme()
 
   return (
     <div className={`app ${theme}`}>
