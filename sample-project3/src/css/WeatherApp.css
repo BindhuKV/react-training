@@ -1,10 +1,23 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8e8d4; 
+  width: 100%;
+  min-height: 100vh;
+}
+
 .weather-app {
   max-width: 400px;
-  margin: 2rem auto;
+  width: 100%;
   padding: 1rem;
   text-align: center;
   background-color: lightblue;
   border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .weather-app h1 {
