@@ -1,0 +1,9 @@
+.favorites-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.favorites-page h1 {
+  margin-bottom: 20px;
+  text-align: center;
+}
